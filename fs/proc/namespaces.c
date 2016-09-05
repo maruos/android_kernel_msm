@@ -24,8 +24,10 @@ static const struct proc_ns_operations *ns_entries[] = {
 #ifdef CONFIG_IPC_NS
 	&ipcns_operations,
 #endif
+#if 0
 #ifdef CONFIG_PID_NS
 	&pidns_operations,
+#endif
 #endif
 	&mntns_operations,
 };
